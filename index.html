@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aplicación de Clima</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="card">
+      <div class="search">
+        <input
+          type="text"
+          placeholder="Busca como 'Miami, US'"
+          spellcheck="false"
+        />
+        <button><img src="imagenes/search.png" alt="Buscar" /></button>
+      </div>
+
+      <div class="error" style="display: none">
+        <p>Ciudad no encontrada</p>
+      </div>
+
+      <div class="clima" style="display: none">
+        <img src="imagenes/rain.png" class="icono-clima" alt="Clima" />
+        <h1 class="temp">--°c</h1>
+        <h2 class="ciudad">---</h2>
+        
+        <div class="hora-local">Hora local: --:--:--</div>
+
+        <div class="detalles">
+          <div class="col">
+            <img src="imagenes/humidity.png" alt="Humedad" />
+            <div>
+              <p class="humedad">--%</p>
+              <p>Humedad</p>
+            </div>
+          </div>
+
+          <div class="col">
+            <img src="imagenes/wind.png" alt="Viento" />
+            <div>
+              <p class="viento">-- Km/h</p>
+              <p>Viento</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
